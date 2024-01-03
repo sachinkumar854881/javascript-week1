@@ -156,44 +156,64 @@ console.log('null==null',null=='null')
 var val_to_convert = 10
 console.log("val_to_convert",val_to_convert)
 console.log("val_to_string",typeof(val_to_convert))
-console.log("val_to_convert",val_to_convert.toString())
-console.log("val_to_convert",typeof(val_to_convert.toString()))
+console.log("val_to_convert:",val_to_convert.toString())
+console.log("val_to_convert:",typeof(val_to_convert.toString()))
 // convert number into string & string into number
 var str_val = new String(10)
-console.log('str_val',str_val)
-console.log('str_val',str_val.valueOf())
+console.log('str_val:',str_val)
+console.log('str_val:',str_val.valueOf())
 
 var convertedval = new Number(str_val)
-console.log("converedvalue",convertedval)
-console.log("convertedval",convertedval.valueOf())
+console.log("converedvalue:",convertedval)
+console.log("convertedval:",convertedval.valueOf())
 
 // convert Boolean into string & Boolean into number
+console.log("converted Boolean into String & number")
 var bool_str = new String(true)
-console.log("bool_str",bool_str)
-console.log("bool_str",bool_str.valueOf())
+console.log("bool_str:",bool_str)
+console.log("bool_str:",bool_str.valueOf())
 
 var conv_bool_str = new Number(true)
-console.log("conv_bool_str",conv_bool_str)
-console.log("conv_bool_str",conv_bool_str.valueOf())
+console.log("conv_bool_str:",conv_bool_str)
+console.log("conv_bool_str:",conv_bool_str.valueOf())
 
-// converted Null into string & Null into number
+// converted Null into string,number,Boolean
+console.log("converted null into String,number & boolean")
 var null_str = new String(null)
 console.log("null_str",null_str)
-console.log("convert null into String ",null_str.valueOf())
+console.log("convert null into String:",null_str.valueOf())
  
 var null_num = new Number(null)
 console.log("null_num",null_num)
-console.log("convert is",null_num.valueOf())
+console.log("convert null into number:",null_num.valueOf())
 
+var null_bool = new Boolean(null)
+console.log("null_bool is ",null_bool)
+console.log("converted null into boolean:",null_bool.valueOf())
+
+// converted Undefined into string,number,Boolean
+console.log("converted undefined into String,number & boolean")
+var undef_str = new String(undefined)
+console.log("undef_str",undef_str)
+console.log("convert undefined into String:",undef_str.valueOf())
+ 
+var undef_num = new Number(undefined)
+console.log("undef_num",undef_num)
+console.log("convert undefined into number:",undef_num.valueOf())
+
+var undef_bool = new Boolean(undefined)
+console.log("undef_bool is ",undef_bool)
+console.log("converted undef into boolean:",undef_bool.valueOf())
 // convert string into parseInt & parseFloat
+console.log("converted String using parseInt & parseFloat")
 var intdata = '300';
 console.log(intdata,"is a",typeof(intdata));
 intdata = parseInt(intdata);
 console.log(intdata)
-console.log(intdata,"is a number",typeof(intdata))
+console.log(intdata,'type of',typeof(intdata))
 
 let floatdata = '300.5'
-console.log(floatdata,"is a",typeof(floatdata))
+console.log(floatdata,'type of',typeof(floatdata))
 floatdata = parseFloat(floatdata)
 console.log(floatdata)
-console.log(floatdata,"is a",typeof(floatdata))
+console.log(floatdata,'type of',typeof(floatdata))
